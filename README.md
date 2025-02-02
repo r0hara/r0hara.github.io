@@ -1,2 +1,2 @@
 # seattle-melbourne-website
-Hello World
+Hello World! Welcome to the website.
