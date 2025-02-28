@@ -136,6 +136,7 @@ input:focus-within {
     display: inline;
     position: relative;
     border-left: none;
+    margin-top: 5px;
 }
 
 .navbar {
@@ -163,9 +164,9 @@ input:focus-within {
 .navbar a {
     color: rgb(255, 255, 255);
     display: block;
-    font-family: Glacial, sans-serif;
+    font-family: LeJour, sans-serif;
     height: 100%;
-    padding: 0 15px 0 15px;
+    padding: 0px 15px 0 15px;
     cursor: pointer;
     margin: 0;
 }
@@ -183,17 +184,18 @@ input:focus-within {
 }
 
 p {
+    align-self: center;
     color: white;
     font-family: Glacial, sans-serif;
     font-size: 18px;
     line-height: 25px;
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0 auto 0 auto;
+    max-width: 50rem;
     min-width: 427px;
+    padding: 0;
     text-align: justify;
 }
+
 strong {
     color: rgb(255, 255, 255);
     font-weight: bolder;

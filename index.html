@@ -1,9 +1,5 @@
 <head>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <nav class="navbar">
@@ -15,13 +11,17 @@
         </ul>
     </nav>
     <section id="hero">
-        <img src="hero.jpg">
+        <img srcset="hero-desktop.jpg 3015w, hero-mobile.jpg 1696w"
+        sizes="(max-width: 680px) 1696px,
+                3015w"
+        src="hero-desktop.jpg"
+        />
         <div class="flex-row">
             <h1>Coming soon</h1>
-            <p><strong>Spellbound Threads</strong> is an online embroidery store that 
-                aims to enchant your wardrobe with unique, enchanting designs 
-                that reflect your personality and make you feel truly 
-                special. We hope you join us when we launch and 
+            <p><strong>Spellbound Threads</strong> is an online embroidery store  
+                that aims to enchant your wardrobe with unique designs
+                that reflect your personality and make you feel truly special.
+                We hope you join us when we launch and 
                 let us <em>Enchant Your Style.</em></p>
             <h2>Subscribe to be the first to know when we go live</h2>
             <form name="email">
