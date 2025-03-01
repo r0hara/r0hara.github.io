@@ -12,15 +12,118 @@
     font-style: normal;
 }
 
+/* desktop media query */
 @media (min-width:1025px) {
+
+    button {
+        font-size: 22px;
+    }
+
+    form {
+        margin: 2rem 0 0 0;
+    }
+
+    h1 {
+        font-size: 112px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .input-email {
+        font-size: 18px;
+        min-width: 20rem;
+    }
+
+    input::placeholder {
+        font-size: 18px;
+    }
+
+    input:focus-within {
+        font-size: 18px;
+    }
+
     .navbar {
         height: 25px;
+        margin: 0;
+    }
+
+    .navbar img {
+        height: 1.1rem;
+        
+    }
+
+    .navbar a {
+        padding: 5px 15px 0 15px;
+        font-size: 19px;
+    }  
+
+    p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    strong {
+        font-size: 22px;
     }
 }
 
+/* mobile media query */
 @media (max-width:1025px) {
+    
+    button {
+        font-size: 36px;
+    }
+
+    form {
+        margin: 5rem 0 0 0;
+    }
+
+    h1 {
+        font-size: 130px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .input-email {
+        font-size: 36px;
+        min-height: 4rem;
+        min-width: 40rem;
+    }
+
+    input::placeholder {
+        font-size: 36px;
+    }
+
+    input:focus-within {
+        font-size: 36px;
+    }
+
     .navbar {
         height: 50px;
+        margin: 1rem 0 0 0;
+    }
+
+    .navbar img {
+        height: 1.5rem;
+        top: -0.2rem;
+    }
+
+    .navbar a {
+        padding: 12px 15px 0 15px;
+        font-size: 36px;
+    }
+
+    p {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    strong {
+        font-size: 36px;
     }
 }
 
@@ -38,9 +141,7 @@ button {
     border-color: rgb(86, 102, 29);
     color: rgb(246, 242, 237);
     font-family: Glacial, sans-serif;
-    font-size: 22px;
     margin: 1rem 0 1rem 0;
-    max-width: 15%;
     transition: 0.4s;
 }
 
@@ -73,27 +174,21 @@ button:hover {
 
 form {
     align-self: center;
-    margin: 2rem 0 0 0;
     padding: 0;
     min-height: 25px;
-    min-width: 250px;
-    max-width: 300px;
 }
 
 h1 {
     align-self: center;
     color: rgb(246, 242, 237);  
-    font-size: 112px;
     font-family: LeJour, sans-serif;
     margin: 0;
-    max-width: 90%;
     margin: 0;
     padding: 0;
 }
 
 h2 {
     color: rgb(255, 255, 255);  
-    font-size: 24px;
     font-family: Glacial, sans-serif;
     margin: 2rem 0 0 0;
     padding: 0;
@@ -117,8 +212,6 @@ h2 {
     border-color: rgba(255, 64, 64, 0.696);
     border-width: 0 0 2px 0;
     font-family: Glacial, sans-serif;
-    height: 100%;
-    min-width: 100%;
     outline: none;
     position: relative;
     margin: 0;
@@ -128,14 +221,12 @@ h2 {
 input::placeholder {
     color: rgb(255, 255, 255);
     font-family: Glacial, sans-serif;
-    font-size: 18px;
     text-align: left;
 }
 
 input:focus-within {
     margin: 0;
     padding: 0;
-    font-size: 18px;
     color: rgb(255, 255, 255);
     caret-color: white;
 }
@@ -152,7 +243,6 @@ input:focus-within {
 
 .navbar {
     background-color: rgb(86, 102, 29);
-    margin: 0;
     overflow: hidden;
     padding: 0;
     top: 0;
@@ -177,19 +267,15 @@ input:focus-within {
     cursor: pointer;
     display: block;
     font-family: LeJour, sans-serif;
-    font-size: 1.2rem;
     height: 100%;
-    padding: 15px 15px 0 15px;
     margin: 0;
 }
 
 .navbar img {
     filter: invert(100%);
-    height: 1.5em;
     margin: 0;
     padding: 0;
     position: relative;
-    top: -0.2rem;
 }
 
 .navbar a:hover {
@@ -200,8 +286,6 @@ p {
     align-self: center;
     color: white;
     font-family: Glacial, sans-serif;
-    font-size: 18px;
-    line-height: 25px;
     margin: 2rem auto 0 auto;
     max-width: 50rem;
     min-width: 427px;
@@ -212,6 +296,5 @@ p {
 strong {
     color: rgb(255, 255, 255);
     font-weight: bolder;
-    font-size: 22px;
     text-shadow: 2px 2px 2px black;
 }
